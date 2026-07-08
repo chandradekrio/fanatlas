@@ -1,0 +1,151 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    background:#eef3f8;
+}
+
+header{
+    background:#6CABDD;
+    color:white;
+    padding:18px 24px;
+    box-shadow:0 2px 6px rgba(0,0,0,.15);
+}
+
+header h1{
+    font-size:30px;
+}
+
+header p{
+    margin-top:4px;
+}
+
+#map{
+    height:calc(100vh - 125px);
+    width:100%;
+}
+
+#statusBar{
+    background:#f5f5f5;
+    border-top:1px solid #ddd;
+    padding:10px 16px;
+    font-size:14px;
+    font-family:Arial,Helvetica,sans-serif;
+}
+
+/* -----------------------------
+   Supporter Panel
+------------------------------*/
+
+#supporterPanel{
+
+    position:absolute;
+
+    top:88px;
+
+    right:0;
+
+    width:320px;
+
+    height:calc(100vh - 88px);
+
+    background:white;
+
+    box-shadow:-4px 0 12px rgba(0,0,0,.15);
+
+    transition:right .30s ease;
+
+    z-index:1000;
+
+}
+
+.hidden{
+
+    right:-340px !important;
+
+}
+
+.panelHeader{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px;
+
+    background:#6CABDD;
+
+    color:white;
+
+}
+
+.panelContent{
+
+    padding:18px;
+
+}
+
+.panelContent label{
+
+    display:block;
+
+    margin-top:14px;
+
+    margin-bottom:6px;
+
+    font-weight:bold;
+
+}
+
+.panelContent input,
+.panelContent textarea{
+
+    width:100%;
+
+    padding:8px;
+
+    border:1px solid #ccc;
+
+    border-radius:4px;
+
+}
+
+#saveButton{
+
+    margin-top:20px;
+
+    width:100%;
+
+    padding:12px;
+
+    background:#6CABDD;
+
+    color:white;
+
+    border:none;
+
+    border-radius:4px;
+
+    cursor:pointer;
+
+}
+
+#closePanel{
+
+    border:none;
+
+    background:none;
+
+    color:white;
+
+    font-size:22px;
+
+    cursor:pointer;
+
+}
