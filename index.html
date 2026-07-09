@@ -1,100 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>FanAtlas</title>
-
-    <link rel="stylesheet"
-          href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-
-    <link rel="stylesheet" href="style.css">
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FanAtlas</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
-<header>
-
-    <h1>🌍 FanAtlas</h1>
-
-    <p>Every fan. Every story. Every place.</p>
-
-</header>
-
+<header><h1>🌍 FanAtlas</h1><p>Every fan. Every story. Every place.</p></header>
 <div id="map"></div>
-
-<div id="statusBar">
-    Click anywhere on the map to select a fan location.
-</div>
-
+<div id="statusBar">Click anywhere on the map to select a fan location.</div>
 <div id="fanPanel" class="hidden">
-
-    <div class="panelHeader">
-
-        <h2>New Fan</h2>
-
-        <button id="closeFanPanel" title="Close">
-            ✕
-        </button>
-
-    </div>
-
-    <div class="panelContent">
-
-        <label for="fanName">Name</label>
-        <input
-            id="fanName"
-            type="text"
-            placeholder="John Smith">
-
-        <label for="fanCity">City</label>
-        <input
-            id="fanCity"
-            type="text"
-            placeholder="Manchester">
-
-        <label for="fanCountry">Country</label>
-        <input
-            id="fanCountry"
-            type="text"
-            placeholder="United Kingdom">
-
-            <label for="fanLatitude">Latitude</label>
-<input
-    id="fanLatitude"
-    type="text"
-    readonly>
-
-<label for="fanLongitude">Longitude</label>
-<input
-    id="fanLongitude"
-    type="text"
-    readonly>
-
-        <label for="fanStory">Story</label>
-        <textarea
-            id="fanStory"
-            rows="8"
-            placeholder="Tell the story of how you met this fan..."></textarea>
-
-        <button id="saveFanButton">
-            Save Fan
-        </button>
-
-    </div>
-
-</div>
-
+<div class="panelHeader"><h2>New Fan</h2><button id="closeFanPanel">✕</button></div>
+<div class="panelContent">
+<label for="fanName">Name</label><input id="fanName" type="text" placeholder="John Smith">
+<label for="fanCity">City</label><input id="fanCity" type="text" placeholder="Manchester">
+<label for="fanCountry">Country</label><input id="fanCountry" type="text" placeholder="United Kingdom">
+<input id="fanLatitude" type="hidden">
+<input id="fanLongitude" type="hidden">
+<label for="fanStory">Story</label><textarea id="fanStory" rows="8" placeholder="Tell the story..."></textarea>
+<button id="saveFanButton">Save Fan</button>
+</div></div>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-
-<script src="config.js"></script>
-
-<script src="app.js"></script>
-
-</body>
-
-</html>
+<script src="config.js"></script><script src="app.js"></script>
+</body></html>
