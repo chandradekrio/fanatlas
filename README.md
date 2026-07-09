@@ -78,3 +78,4 @@ Project documentation lives in the `docs/` folder.
 ---
 
 **Built by the FanAtlas Team.**
+Repository renamed successfully.
